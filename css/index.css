@@ -1,0 +1,158 @@
+*{
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+/* --------------------- background --------------------- */
+
+.wallImg {
+    position: relative;
+    height: 100vh;
+    background-image: url("../img/museumWall01B.jpg");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------------- game --------------------- */
+
+.background {
+    background: rgb(52, 166, 251);
+    table-layout: fixed;
+    border-spacing: 0;  
+}
+
+.background td {
+    padding: 0;
+}
+
+.lava {
+    background: rgb(255, 100, 100);
+}
+
+.wall {
+    background: white;
+    border: solid 1px black;
+    box-shadow: 1px 1px 1px black;
+}
+
+.actor {
+    position: absolute;
+}
+
+.coin {
+    background: rgb(241, 229, 89);
+    border-radius: 50%;
+    box-shadow: 2px 2px 1px black;
+}
+
+.player {
+    background: rgb(64, 64, 64);
+}
+
+.lost .player {
+    background: rgb(160, 64, 64);
+}
+
+.won .player {
+    box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+
+.game {
+    overflow: hidden;
+    max-width: 600px;
+    max-height: 450px;
+    position: absolute;
+    margin: auto;
+    /* top: 36px; */
+    top: 133px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* --------------------- score --------------------- */
+
+#scoreContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-size: 30px;
+}
+
+/* --------------------- start & end display --------------------- */
+
+#messageContainer {
+    position: absolute;
+    width: 620px;
+    height: 470px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 123px;
+    border: solid 10px black;
+    /* box-shadow: 10px 10px 30px 0 black; */
+    box-shadow: -7px 10px 10px rgba(100, 100, 100, 0.7);
+    background: rgb(255, 100, 100);
+    margin: auto;
+}
+
+#message {
+    text-align: center;
+    color: rgb(241, 229, 89);
+    font-size: 70px;
+    margin: 9px 0px;
+}
+
+/* --------------------- High Score List --------------------- */
+
+#highScoreList {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(241, 229, 89);
+    color: white;
+    list-style-type: none;
+}
+
+/* --------------------- player input & play button --------------------- */
+
+#inputContainer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 620px;
+}
+
+#playerNameInput {
+    height: 30px;
+    font-size: 18px;
+    border: solid 3px black;
+}
+
+#playButton {
+    display: inline-block;
+    width: 65px;
+    height: 65px;
+    font-size: 18px;
+    margin: 0px 2px;
+    border: solid 3px black;
+    border-radius: 50%;
+    color: black;
+    color: rgb(241, 229, 89);
+    box-shadow: -2px 3px 10px rgba(100, 100, 100, 0.7);
+    outline: none;
+    cursor: pointer;
+}
+
+#playButton:active {
+    box-shadow: -2px 3px 10px rgba(100, 100, 100, 0.7) inset;
+}
+
+.play {
+    background-color: rgb(255, 100, 100);
+}
+
+.pause {
+    background-color: rgb(52, 166, 251);
+}
