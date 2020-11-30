@@ -30,7 +30,7 @@ We will be imitating a painting hanging on a wall.
 
 Our reference is the book : Eloquent JavaScript
 
-We tried to realize a project given in the book.
+
 
 Feel free to contact us:
 
